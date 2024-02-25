@@ -22,11 +22,10 @@ steps:
     restoreSolution: '$(solution)'
 - task: SonarCloudPrepare@1
   inputs:
-    SonarCloud: 'SonarCloud'
-    organization: 'sonaproject'
+    SonarCloud: 'sonaconnection'
+    organization: 'dev-were'
     scannerMode: 'MSBuild'
-    projectKey: 'Agileproject'
-    projectName: 'Agileproject'
+    projectKey: 'sonaproject'
 
 - task: VSBuild@1
   inputs:
